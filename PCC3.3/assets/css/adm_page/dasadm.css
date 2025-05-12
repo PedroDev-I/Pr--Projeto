@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Sigmar+One&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+        body {
+            margin: 0;
+            background-color: #e6f4ea; /* Verde suave */
+            font-family: 'Sigmar One', sans-serif;
+            color: #2e2e2e;
+        }
+
+        /* MENU SUPERIOR */
+        nav.menu.row {
+            background-color: #4caf50; /* Verde folha */
+            display: flex;
+            flex-direction: column; /* Alterado para coluna */
+            align-items: center; /* Centraliza os itens na vertical */
+            padding: 20px 0; /* Ajusta o espaçamento */
+        }
+
+        .links-ad {
+            display: flex;
+            flex-direction: column; /* Coloca os itens em coluna */
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            gap: 50px; /* Espaço entre os itens */
+        }
+
+        .links-ad li {
+            list-style: none;
+        }
+
+        .links-ad li a {
+            margin-top: 40 px;
+            font-size: 22px;
+            text-decoration: none;
+            color: #fefefe;
+            padding: 12px 69px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .links-ad li a:hover {
+            background-color: #f8bbd0; /* Rosa pétala */
+            border-radius: 40px;
+            color: #2e2e2e;
+        }
+
+        /* ICONES DE MENU */
+        .links-ad li a img {
+            width: 100px; /* Ajuste a largura das imagens */
+            height: 100px;
+            transition: transform 0.3s ease, background-size 0.3s ease;
+        }
+
+        .links-ad li a:hover img {
+            transform: scale(1.1);
+        }
