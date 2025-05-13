@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Sigmar+One&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    margin: 0;
+    background-color: #e6f4ea;
+    font-family: 'Sigmar One', sans-serif;
+    color: #2e2e2e;
+}
+
+/* MENU SUPERIOR */
+nav.row-menu {
+    background-color: #4caf50;
+    display: flex;
+    padding: 10px 12px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.login {
+    display: flex;
+    gap: 10px;
+}
+
+.login li {
+    list-style: none;
+}
+
+nav a {
+    font-size: 22px;
+    text-decoration: none;
+    color: #fefefe;
+    padding: 12px 69px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+}
+
+nav a:hover {
+    background-color: #f8bbd0;
+    border-radius: 40px;
+    color: #2e2e2e;
+}
+
+.btn-login, .btn-register {
+    padding: 10px 12px;
+}
+
+/* HEADER */
+header {
+    padding: 50px 0;
+    background-image: url('/caminho/para/sua-imagem-realista.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fefefe;
+}
+
+header img {
+    border-radius: 50%;
+    width: 40vh;
+    border: 5px solid #fefefe;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* BARRA DE PESQUISA */
+.pesquisa {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #4caf50;
+}
+
+.pesquisa input {
+    width: 250px;
+    height: 30px;
+    align-items: center;
+    background-image: url(../img/lupa-arredondada.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 20px;
+    border: 1px solid #4caf50;
+    padding-right: 30px;
+    text-align: center;
+}
+
+/* ICONES DE MENU */
+.dog-icon,
+.cat-icon,
+.other-icon,
+.shop-icon,
+.sacola-icon {
+    transition: transform 0.3s ease, background-size 0.3s ease;
+}
+
+.dog-icon:hover {
+    background-image: url(../img/homepage/retriever-dourado.png);
+    background-size: 42px;
+    background-repeat: no-repeat;
+    background-position: 90%;
+    transform: scale(1.1);
+}
+
+.cat-icon:hover {
+    background-image: url(../img/homepage/gato.png);
+    background-size: 41px;
+    background-repeat: no-repeat;
+    background-position: 90%;
+    transform: scale(1.1);
+}
+
+.other-icon:hover {
+    background-image: url(../img/homepage/camaleao.png);
+    background-size: 41px;
+    background-repeat: no-repeat;
+    background-position: 90%;
+    transform: scale(1.1);
+}
+
+.shop-icon:hover {
+    background-image: url(../img/homepage/brinquedos.png);
+    background-size: 41px;
+    background-repeat: no-repeat;
+    background-position: 90%;
+    transform: scale(1.1);
+}
+
+.sacola-icon:hover {
+    background-image: url(../img/homepage/carrinho-de-supermercado.png);
+    background-size: 42px;
+    background-repeat: no-repeat;
+    background-position: 90%;
+    transform: scale(1.1);
+}
+
+.row-menu a {
+    transition: transform 0.3s ease, background-size 0.3s ease;
+}
+
+.row-menu a:hover {
+    transform: scale(1.1);
+}
+
+/* TELA PRINCIPAL */
+h2 {
+    text-align: center;
+}
+
+.slider-top {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    overflow-x: auto;
+    padding: 10px;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.card img {
+    flex: 0 0 auto;
+    transition: transform 0.3s ease, background-size 0.3s ease;
+}
+
+.card img:hover {
+    flex: 0 0 auto;
+    transform: scale(1.1);
+}
+
+.card-text {
+    text-align: center;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: contain;
+}
+
+.carousel-item img {
+    max-height: 500px;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+.carousel {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.158);
+    border-radius: 47%;
+}
+
+/* RODAPÉ */
+.footer {
+    background-color: #2e2e2e;
+    color: #fefefe;
+    font-family: Arial, sans-serif;
+    padding: 30px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav li {
+    margin-bottom: 10px;
+}
+
+.footer-nav a {
+    color: #fefefe;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-nav a:hover {
+    color: #f8bbd0;
+}
+
+.footer-info {
+    max-width: 600px;
+    margin-left: 20px;
+}
+
+.footer-info p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-social a {
+    margin-right: 15px;
+    color: #fefefe;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #4caf50;
+}
+
+.footer-bottom {
+    text-align: center;
+    background-color: #1a1a1a;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.footer-bottom a {
+    color: #fefefe;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: #00a8e8;
+}
+
+/* MEDIA QUERIES PARA RESPONSIVIDADE */
+@media (max-width: 768px) {
+    nav.row-menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        padding: 10px 20px;
+        font-size: 14px;
+        display: block;
+    }
+
+    .login {
+        flex-direction: column;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    header {
+        padding: 30px 10px;
+    }
+
+    header img {
+        width: 60vw;
+    }
+
+    .pesquisa {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .pesquisa input {
+        width: 80%;
+    }
+
+    .slider-top {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .card-img-top {
+        max-height: 200px;
+    }
+
+    .carousel {
+        max-width: 95%;
+    }
+
+    .card-text {
+        padding: 0 10px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-nav {
+        margin-bottom: 20px;
+    }
+
+    .footer-info {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .footer-social a {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    .carousel-item img {
+        max-height: 250px;
+    }
+
+    header img {
+        width: 80vw;
+    }
+}

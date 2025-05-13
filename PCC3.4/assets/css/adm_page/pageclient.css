@@ -1,0 +1,84 @@
+/* Estilo Geral da Página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e6f4ea;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do Botão Adicionar Usuário */
+a{
+    text-decoration: none;
+    color: white;
+    background-color: gold;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+}
+
+a[href*="adicionar"]:hover {
+    background-color: #f2a900;
+}
+
+/* Estilo da Tabela */
+table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f8bbd0;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilo dos Botões de Ação */
+td a {
+    padding: 8px 15px;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
+    background-color: #5a67d8;
+    color: white;
+    font-weight: bold;
+    margin: 5px 5px 0 0;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+td a:hover {
+    background-color: #434190;
+}
+
+/* Estilo do botão Excluir */
+td a:nth-child(2) {
+    background-color: red;
+}
+
+td a:nth-child(2):hover {
+    background-color: darkred;
+}
+
+/* Estilo do Modal */
+#popupModal {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+}

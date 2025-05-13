@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Sigmar+One&display=swap');
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e6f4ea; /* Fundo suave inspirado na natureza */
+    font-family: 'Merriweather', 'Arial Narrow', Arial, sans-serif;
+    color: #2e2e2e;
+}
+
+/* FORMULÁRIO */
+form {
+    background-color: #fefefe; /* Branco floral */
+    text-align: center;
+    border-radius: 40px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+    padding: 30px 20px;
+}
+
+/* IMAGEM DO LOGO */
+header img {
+    margin-top: 10px;
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #f8bbd0; /* Moldura rosa pétala */
+}
+
+/* CONTEÚDO CENTRAL */
+.card-mid {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffffc5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+/* RÓTULOS */
+.card-mid label {
+    display: block;
+    margin-bottom: 5px;
+    color: #2e2e2e;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* CAMPOS DE ENTRADA */
+.card-mid input {
+    width: 100%;
+    height: 36px;
+    margin-bottom: 15px;
+    border: 1px solid #4caf50; /* Verde folha */
+    border-radius: 5px;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+/* BOTÃO */
+.card-mid button {
+    border-radius: 40px;
+    height: 46px;
+    width: 120px;
+    background-color: #4caf50;
+    color: #fefefe;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* HOVER DO BOTÃO */
+.card-mid button:hover {
+    background-color: #f8bbd0; /* Rosa pétala */
+    color: #2e2e2e;
+}

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Sigmar+One&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Sigmar One', sans-serif;
+  background-color: #e6f4ea;
+  color: #2e2e2e;
+  display: flex;
+  min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 220px;
+  background-color: #4caf50;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.nav-links li {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fefefe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.nav-links li a img {
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s ease;
+}
+
+.nav-links li a span {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.nav-links li a:hover {
+  background-color: #f8bbd0;
+  color: #2e2e2e;
+  transform: scale(1.05);
+}
+
+.nav-links li a:hover img {
+  transform: scale(1.1);
+}
+
+/* CONTEÚDO PRINCIPAL */
+.content {
+  margin-left: 220px;
+  padding: 40px;
+  width: 100%;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .nav-links li {
+    margin: 0;
+  }
+
+  .nav-links li a {
+    padding: 6px;
+  }
+
+  .nav-links li a img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .nav-links li a span {
+    font-size: 14px;
+  }
+
+  .content {
+    margin-left: 0;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links li a img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .nav-links li a span {
+    font-size: 12px;
+  }
+}
